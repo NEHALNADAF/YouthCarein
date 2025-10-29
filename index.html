@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouthCare — Helping Youngsters</title>
+  <meta name="description" content="YouthCare — mentorship, recovery, skills, and free resources." />
+  <style>
+    :root{--accent:#0b74ff;--dark:#0b1020;--muted:#6b7280}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:var(--dark);background:#f8fafc}
+    a{color:inherit;text-decoration:none}
+    header{background:linear-gradient(180deg,rgba(11,116,255,0.08),transparent);backdrop-filter:blur(4px);position:sticky;top:0;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;color:var(--dark);letter-spacing:0.4px}
+    .nav-links{display:flex;gap:14px;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0}
+    .hero h1{font-size:38px;line-height:1.05;margin-bottom:12px}
+    .hero p{color:var(--muted);margin-bottom:18px}
+    .stats{display:flex;gap:18px;margin-top:18px}
+    .stat{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04);min-width:120px;text-align:center}
+    .stat strong{display:block;font-size:20px;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:32px 0}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .card h3{margin-bottom:8px}
+    .resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+    .resource{background:#fff;padding:12px;border-radius:10px;text-align:center}
+    .stories{display:flex;gap:12px;overflow:auto;padding-bottom:6px}
+    .story{min-width:260px;background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    footer{background:#fff;margin-top:34px;padding:28px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.03)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.nav-links{display:none}}
+    .fade-in{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+    .fade-in.show{opacity:1;transform:none}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">YouthCare</div>
+        <div class="nav-links">
+          <a href="#programs">Programs</a>
+          <a href="#resources">Resources</a>
+          <a href="#stories">Success Stories</a>
+          <a class="btn" href="#contact">Get Help</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <p class="muted">Hyderabad • Free &amp; Confidential</p>
+        <h1 class="fade-in">Change Starts Here — Helping Youngsters Bloom</h1>
+        <p class="muted fade-in">We mentor youth to reach their potential and support those struggling with addictions. Free counseling and peer groups at our Hyderabad center.</p>
+        <div style="margin-top:14px" class="fade-in"><a class="btn" href="#contact">Get Help Now</a> <a href="#programs" style="margin-left:12px" class="pill">Learn More</a></div>
+
+        <div class="stats" style="margin-top:26px">
+          <div class="stat fade-in"><strong id="counter1">0</strong><div class="muted">Youths Helped</div></div>
+          <div class="stat fade-in"><strong id="counter2">0</strong><div class="muted">Active Mentors</div></div>
+          <div class="stat fade-in"><strong id="counter3">0</strong><div class="muted">Support Groups</div></div>
+        </div>
+
+        <div style="margin-top:18px" class="muted">Peer Support • Confidential • Career Guidance • Family Counseling • Community Events</div>
+      </div>
+
+      <div>
+        <div style="background:url('assets/images/hero.jpg') center/cover no-repeat;height:320px;border-radius:12px;box-shadow:0 10px 30px rgba(11,116,255,0.08)"></div>
+      </div>
+    </section>
+
+    <section id="programs">
+      <h2 class="fade-in">Our Approach</h2>
+      <p class="muted fade-in">A better way to help youth grow</p>
+      <div class="grid">
+        <div class="card fade-in"><h3>Personal Mentorship</h3><p class="muted">One-on-one guidance with experienced mentors who understand today's challenges.</p></div>
+        <div class="card fade-in"><h3>Support Groups</h3><p class="muted">Safe spaces to connect with peers, share, and grow together.</p></div>
+        <div class="card fade-in"><h3>Addiction Recovery</h3><p class="muted">Structured programs to break free from substance abuse and harmful habits.</p></div>
+        <div class="card fade-in"><h3>Skill Development</h3><p class="muted">Workshops to build practical skills for personal and professional growth.</p></div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2 class="fade-in">Free Resources</h2>
+      <p class="muted fade-in">Download Free PDF Books</p>
+      <div class="resource-grid">
+        <div class="resource fade-in"><img src="assets/images/book1.jpg" alt="book" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px"><h4>Translation of 30th Para</h4><p class="muted">Quick commentary & translation.</p><p style="margin-top:8px"><a href="assets/pdfs/book1.pdf" class="btn">Download PDF</a></p></div>
+        <div class="resource fade-in"><img src="assets/images/book2.jpg" alt="book" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px"><h4>Namaz Ka Tarjuma</h4><p class="muted">Translation of the Namaz.</p><p style="margin-top:8px"><a href="assets/pdfs/book2.pdf" class="btn">Download PDF</a></p></div>
+        <div class="resource fade-in"><img src="assets/images/book3.jpg" alt="book" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px"><h4>Allah Ki Pehachan</h4><p class="muted">99 names of Allah with meaning.</p><p style="margin-top:8px"><a href="assets/pdfs/book3.pdf" class="btn">Download PDF</a></p></div>
+        <div class="resource fade-in"><div style="height:120px;border-radius:8px;background:linear-gradient(180deg,#f3f8ff,#fff);display:flex;align-items:center;justify-content:center;margin-bottom:8px">More</div><h4>Book Title 4</h4><p class="muted">Brief description for Book 4</p><p style="margin-top:8px"><a href="assets/pdfs/book4.pdf" class="btn">Download PDF</a></p></div>
+      </div>
+    </section>
+
+    <section id="stories">
+      <h2 class="fade-in">Success Stories</h2>
+      <p class="muted fade-in">What our youth say</p>
+      <div class="stories">
+        <div class="story fade-in"><img src="assets/images/person1.jpg" style="width:48px;height:48px;border-radius:50%;margin-bottom:8px"><h4>Rahul K.</h4><p class="muted">Recovery Program</p><blockquote>"Youth Care gave me tools to overcome addiction. The mentors never gave up on me."</blockquote></div>
+        <div class="story fade-in"><img src="assets/images/person2.jpg" style="width:48px;height:48px;border-radius:50%;margin-bottom:8px"><h4>Priya M.</h4><p class="muted">Mentorship Program</p><blockquote>"My mentor unlocked my potential. I'm now studying at a top college."</blockquote></div>
+        <div class="story fade-in"><img src="assets/images/person3.jpg" style="width:48px;height:48px;border-radius:50%;margin-bottom:8px"><h4>Arjun S.</h4><p class="muted">Skills Workshop</p><blockquote>"The coding workshop changed my life. I now build helpful apps for my community."</blockquote></div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h2 class="fade-in">Ready to make a change?</h2>
+      <p class="muted fade-in">Whether seeking help for self or someone dear, the team is here for confidential, free support.</p>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+        <form class="card" onsubmit="event.preventDefault();alert('Form submitted (demo)')">
+          <label class="muted">Full name</label>
+          <input required placeholder="Your name" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eef9">
+          <label class="muted" style="margin-top:8px;display:block">Phone / Email</label>
+          <input required placeholder="Phone or email" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eef9">
+          <label class="muted" style="margin-top:8px;display:block">Message</label>
+          <textarea required placeholder="How can we help?" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eef9;min-height:100px"></textarea>
+          <div style="margin-top:12px"><button class="btn">Send Message</button></div>
+        </form>
+
+        <aside class="card">
+          <h4>Our Hyderabad Center</h4>
+          <p class="muted">Youth Care Hall- 12-2-308/1, Alapathi Nagar, Murad Nagar, Hyderabad, Telangana 500006</p>
+          <p style="margin-top:8px"><strong>+91 98765 43210</strong><br><a href="mailto:help@youthcare.org">help@youthcare.org</a></p>
+          <p style="margin-top:12px"><a href="#" class="pill">View on map</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <strong>Youth Care</strong><div class="muted">Empowering youth since 2015 — mentorship, recovery, skills, and purpose.</div>
+        </div>
+        <div class="muted">© 2025 YouthCare. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show') } })
+    },{threshold:0.12})
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el))
+
+    function animateCounter(id, to){
+      const el = document.getElementById(id); let start=0; const dur=1400; const stepTime=20; const steps=Math.ceil(dur/stepTime); let step=0; const inc = to/steps;
+      const t = setInterval(()=>{ step++; start += inc; el.textContent = Math.floor(start); if(step>=steps){ el.textContent = to; clearInterval(t) } }, stepTime)
+    }
+    setTimeout(()=>{ animateCounter('counter1', 1240); animateCounter('counter2', 32); animateCounter('counter3', 18) },400)
+  </script>
+</body>
+</html>
