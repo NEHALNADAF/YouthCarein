@@ -1,18 +1,136 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>YouthCare</title>
-  <link href="https://feroznadaf.github.io/youth-care/assets/css/style.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <meta name="description" content="YouthCare — mentorship, recovery, skills, and free resources." />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1>YouthCare Website</h1>
-  <p>This is a placeholder page. ChatGPT will update this with full content shortly.</p>
-  <script src="https://feroznadaf.github.io/youth-care/assets/js/main.js"></script>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#home">YouthCare</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#booklet">Booklet</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="muted">Hyderabad • Free & Confidential</p>
+          <h1>Change Starts Here — Helping Youngsters Bloom</h1>
+          <p class="lead">We mentor youth to reach their potential and support those struggling with addictions. Free counseling and peer groups at our Hyderabad center.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#contact">Get Help Now</a>
+            <a class="pill" href="#services">Learn More</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong id="counter1">0</strong><div class="muted">Youths Helped</div></div>
+            <div class="stat"><strong id="counter2">0</strong><div class="muted">Active Mentors</div></div>
+            <div class="stat"><strong id="counter3">0</strong><div class="muted">Support Groups</div></div>
+          </div>
+        </div>
+        <div class="hero-image" style="background-image:url('https://feroznadaf.github.io/youth-care/assets/hero.jpg')"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About YouthCare</h2>
+        <p class="muted">YouthCare is a community initiative focused on mentoring youngsters, providing recovery services, skill-building workshops and free resources.</p>
+        <div class="grid services-grid">
+          <div class="card"><i class="fa-solid fa-hands-helping fa-2x"></i><h3>Mentorship</h3><p class="muted">One-to-one guidance with trained mentors.</p></div>
+          <div class="card"><i class="fa-solid fa-users fa-2x"></i><h3>Support Groups</h3><p class="muted">Peer groups for shared recovery and growth.</p></div>
+          <div class="card"><i class="fa-solid fa-heart-pulse fa-2x"></i><h3>Recovery</h3><p class="muted">Structured addiction recovery programs.</p></div>
+          <div class="card"><i class="fa-solid fa-graduation-cap fa-2x"></i><h3>Skills</h3><p class="muted">Workshops for employability and life skills.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card"><h3>Personal Mentorship</h3><p class="muted">Match with an experienced mentor for weekly sessions.</p></div>
+          <div class="card"><h3>Group Therapy</h3><p class="muted">Facilitated peer groups and counseling.</p></div>
+          <div class="card"><h3>Skill Workshops</h3><p class="muted">Coding, communication, and vocational training.</p></div>
+          <div class="card"><h3>Family Support</h3><p class="muted">Family counseling to rebuild relationships.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booklet" class="section">
+      <div class="container">
+        <h2>Booklet & Free Resources</h2>
+        <p class="muted">Download these PDF booklets for guidance and study.</p>
+        <div class="grid resource-grid">
+          <div class="resource">
+            <img src="https://feroznadaf.github.io/youth-care/assets/book1.jpg" alt="book1">
+            <h4>Translation of 30th Para</h4>
+            <p class="muted">Quick commentary & translation.</p>
+            <p><a class="btn" href="https://feroznadaf.github.io/youth-care/assets/pdfs/book1.pdf" target="_blank">Download PDF</a></p>
+          </div>
+          <div class="resource">
+            <img src="https://feroznadaf.github.io/youth-care/assets/book2.jpg" alt="book2">
+            <h4>Namaz Ka Tarjuma</h4>
+            <p class="muted">Translation of the Namaz.</p>
+            <p><a class="btn" href="https://feroznadaf.github.io/youth-care/assets/pdfs/book2.pdf" target="_blank">Download PDF</a></p>
+          </div>
+          <div class="resource">
+            <img src="https://feroznadaf.github.io/youth-care/assets/book3.jpg" alt="book3">
+            <h4>Allah Ki Pehachan</h4>
+            <p class="muted">99 names of Allah with meaning.</p>
+            <p><a class="btn" href="https://feroznadaf.github.io/youth-care/assets/pdfs/book3.pdf" target="_blank">Download PDF</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact & Center</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="card contact-card">
+            <label class="muted">Full name</label>
+            <input id="name" required placeholder="Your name">
+            <label class="muted">Phone / Email</label>
+            <input id="contactinfo" required placeholder="Phone or email">
+            <label class="muted">Message</label>
+            <textarea id="message" required placeholder="How can we help?"></textarea>
+            <div class="actions"><button class="btn" type="submit">Send Message</button></div>
+          </form>
+          <aside class="card">
+            <h4>Our Hyderabad Center</h4>
+            <p class="muted">Youth Care Hall- 12-2-308/1, Alapathi Nagar, Murad Nagar, Hyderabad, Telangana 500006</p>
+            <p><strong>+91 98765 43210</strong><br><a href="mailto:help@youthcare.org">help@youthcare.org</a></p>
+            <p><a class="pill" href="https://www.google.com/maps" target="_blank">View on map</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <strong>YouthCare</strong>
+          <div class="muted">Empowering youth since 2015 — mentorship, recovery, skills, and purpose.</div>
+        </div>
+        <div class="muted">© 2025 YouthCare. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
